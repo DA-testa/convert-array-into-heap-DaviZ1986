@@ -43,7 +43,7 @@ def main():
     if ("F" in choice):
         print("Input file path")
         path = input()
-        path = "./test/" + path
+        path = "./tests/" + path
         f = open(path, "r")
         n = int(f.readline())
         data = list(map (int, f.readline().split()))
@@ -52,9 +52,6 @@ def main():
 
     print(data)
 
-    # input from keyboard
-    #n = int(input())
-    #data = list(map(int, input().split()))
 
     # checks if lenght of data is the same as the said lenght
     assert len(data) == n
